@@ -1,0 +1,15 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>toight</title>
+</head>
+<body>
+<h1>Start Word Count</h1>
+<form action="{% url "sparta" %}">
+<textarea rows="20" cols="50" name="text"></textarea>
+<br>
+<input type="submit" value="Count!" />
+</form>
+<a href="{% url 'about' %}">About This Site</a>
+</body>
+</html>

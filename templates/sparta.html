@@ -1,0 +1,9 @@
+<h1>This sparta has {{count}} words</h1>
+<a href="{% url 'noice' %}">Back to monke</a>
+<h2> Your texts:</h2>
+{{yourtext}}
+<h2> LET'S COUNT </h2>
+{%  for word,countotal in sortedwords %}
+	{{word}} - {{countotal}}
+<br>
+{% endfor %}
